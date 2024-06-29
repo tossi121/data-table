@@ -1,14 +1,13 @@
 import type { Meta, Story } from '@storybook/react';
-import DataTable, { DataTableProps } from '@/components/DataTable';
+import DataTable, { DataTableProps } from '../components/DataTable';
 
 export default {
   title: 'Components/DataTable',
   component: DataTable,
   parameters: {
-    controls: { disable: true }
-  }
+    controls: { disable: true },
+  },
 } as Meta<typeof DataTable>;
-
 
 type DataTableStory = Story<DataTableProps>;
 
