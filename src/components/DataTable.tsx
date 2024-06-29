@@ -1,5 +1,5 @@
 import React from 'react';
-import "@/styles/globals.css";
+import '../styles/globals.css';
 
 interface DataTableProps {
   columns: {
@@ -18,7 +18,10 @@ const DataTable: React.FC<DataTableProps> = ({ columns, data }) => {
         <thead className="tw-bg-gray-100">
           <tr>
             {columns.map((column) => (
-              <th key={column.key} className="tw-px-6 tw-py-3 tw-text-left tw-text-xs tw-font-medium tw-text-gray-500 tw-uppercase tw-tracking-wider">
+              <th
+                key={column.key}
+                className="tw-px-6 tw-py-3 tw-text-left tw-text-xs tw-font-medium tw-text-gray-500 tw-uppercase tw-tracking-wider"
+              >
                 {column.title}
               </th>
             ))}
